@@ -1,2 +1,2 @@
-# netology-ruby
+# Netologiest
 Netology Ruby API client
