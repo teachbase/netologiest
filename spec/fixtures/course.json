@@ -1,0 +1,422 @@
+{
+    "id": 931,
+    "name": "Контекстная реклама в Google AdWords",
+    "description": "<p>Почему Google AdWords обходится дешевле, чем &laquo;Яндекс. Директ&raquo;? Как сберечь деньги на контекстной рекламе и привлечь целевой трафик на сайт?<br />\r\n&nbsp;<br />\r\nКурс адресован начинающим специалистам по контекстной рекламе и интернет-маркетологам, которые знают основы медиапланирования.</p>\r\n\r\n<p>Полина Аверина расскажет, как создавать рекламные кампании в Google AdWords для поисковой и контекстно-медийной сети. Вы научитесь работать со ссылками, составлять эффективные объявления, подбирать ключевые фразы и минус-слова. Узнаете, как с помощью ремаркетинга вернуть заинтересованных пользователей.</p>\r\n",
+    "progress": 0,
+    "duration": 47,
+    "level": {
+        "id": 1,
+        "name": "Базовый"
+    },
+    "tags": [
+        {
+            "id": 4,
+            "name": "Интернет-маркетинг"
+        }
+    ],
+    "authors": [
+        {
+            "id": 2426656,
+            "organization_post": "Руководитель отдела контекстной рекламы сервиса 1PS",
+            "full_name": "Полина Аверина",
+            "image": "http://netology.ru/content/u7/7049.jpeg",
+            "description": ""
+        }
+    ],
+    "blocks": [
+        {
+            "id": 931,
+            "name": "Блок по умолчанию",
+            "position": 1,
+            "lessons": [
+                {
+                    "id": 2268,
+                    "name": "Вступление и знакомство с автором курса",
+                    "position": 1,
+                    "human_type": "video_lesson",
+                    "poster": "http://netology.ru/content/p3/3375@2x.png",
+                    "video_url": "/courses/931/lessons/2268/iframe"
+                },
+                {
+                    "id": 2269,
+                    "name": "Сравнение Google AdWords и «Яндекс.Директа»",
+                    "position": 2,
+                    "human_type": "video_lesson",
+                    "poster": "http://netology.ru/content/p3/3375@2x.png",
+                    "video_url": "/courses/931/lessons/2269/iframe"
+                },
+                {
+                    "id": 2270,
+                    "name": "Настройки поисковой кампании",
+                    "position": 3,
+                    "human_type": "video_lesson",
+                    "poster": "http://netology.ru/content/p3/3375@2x.png",
+                    "video_url": "/courses/931/lessons/2270/iframe"
+                },
+                {
+                    "id": 2271,
+                    "name": "Работа с ключевыми словами",
+                    "position": 4,
+                    "human_type": "video_lesson",
+                    "poster": "http://netology.ru/content/p3/3375@2x.png",
+                    "video_url": "/courses/931/lessons/2271/iframe"
+                },
+                {
+                    "id": 2272,
+                    "name": "Составление объявлений и работа со ссылками",
+                    "position": 5,
+                    "human_type": "video_lesson",
+                    "poster": "http://netology.ru/content/p3/3375@2x.png",
+                    "video_url": "/courses/931/lessons/2272/iframe"
+                },
+                {
+                    "id": 2273,
+                    "name": "Загрузка кампании через редактор AdWords",
+                    "position": 6,
+                    "human_type": "video_lesson",
+                    "poster": "http://netology.ru/content/p3/3375@2x.png",
+                    "video_url": "/courses/931/lessons/2273/iframe"
+                },
+                {
+                    "id": 2274,
+                    "name": "Расширения объявлений",
+                    "position": 7,
+                    "human_type": "video_lesson",
+                    "poster": "http://netology.ru/content/p3/3375@2x.png",
+                    "video_url": "/courses/931/lessons/2274/iframe"
+                },
+                {
+                    "id": 2275,
+                    "name": "Эффективная кампания для КМС",
+                    "position": 8,
+                    "human_type": "video_lesson",
+                    "poster": "http://netology.ru/content/p3/3375@2x.png",
+                    "video_url": "/courses/931/lessons/2275/iframe"
+                },
+                {
+                    "id": 2276,
+                    "name": "Ремаркетинг в КМС",
+                    "position": 9,
+                    "human_type": "video_lesson",
+                    "poster": "http://netology.ru/content/p3/3375@2x.png",
+                    "video_url": "/courses/931/lessons/2276/iframe"
+                },
+                {
+                    "id": 2277,
+                    "name": "Подведение итогов курса",
+                    "position": 10,
+                    "human_type": "video_lesson",
+                    "poster": "http://netology.ru/content/p3/3375@2x.png",
+                    "video_url": "/courses/931/lessons/2277/iframe"
+                },
+                {
+                    "id": 2547,
+                    "name": "Контекстная реклама в Google AdWords: итоговый тест",
+                    "position": 11,
+                    "human_type": "test_final",
+                    "questions": [
+                        {
+                            "id": "65953",
+                            "position": 1,
+                            "content": "При определении позиции объявления в блоке Google AdWords учитывается:",
+                            "type": "radio",
+                            "answers": [
+                                {
+                                    "id": 1,
+                                    "content": "только ставка рекламодателя",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 2,
+                                    "content": "ставка рекламодателя и прогнозируемый CTR объявления",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 3,
+                                    "content": "показатель качества объявления и ставка рекламодателя",
+                                    "is_correct": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "65954",
+                            "position": 2,
+                            "content": "Вы предоставляете услуги выездной техпомощи на дорогах. Как лучше настроить ставки в объявлениях на мобильных устройствах?",
+                            "type": "radio",
+                            "answers": [
+                                {
+                                    "id": 1,
+                                    "content": "снизить на 50%",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 2,
+                                    "content": "повысить на 50−100%",
+                                    "is_correct": true
+                                },
+                                {
+                                    "id": 3,
+                                    "content": "снизить на 20%",
+                                    "is_correct": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "65955",
+                            "position": 3,
+                            "content": "Как лучше всего настроить геотаргетинг?",
+                            "type": "radio",
+                            "answers": [
+                                {
+                                    "id": 1,
+                                    "content": "установить в настройках кампании таргетинг на Москву, затем по очереди добавить все остальные города",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 2,
+                                    "content": "настроить на каждый город отдельную кампанию, где название города будет присутствовать в текстах объявлений",
+                                    "is_correct": true
+                                },
+                                {
+                                    "id": 3,
+                                    "content": "выбрать в настройках местоположений вариант «Дополнительно» и отметить все нужные точки на карте",
+                                    "is_correct": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "65956",
+                            "position": 4,
+                            "content": "Дневной бюджет в кампании можно задать:",
+                            "type": "radio",
+                            "answers": [
+                                {
+                                    "id": 1,
+                                    "content": "на уровне аккаунта",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 2,
+                                    "content": "на уровне рекламной кампании",
+                                    "is_correct": true
+                                },
+                                {
+                                    "id": 3,
+                                    "content": "на уровне группы объявлений",
+                                    "is_correct": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "65957",
+                            "position": 5,
+                            "content": "По какому запросу пользователя не будет показов?",
+                            "type": "radio",
+                            "answers": [
+                                {
+                                    "id": 1,
+                                    "content": "купить мультиварку в интернет-магазине",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 2,
+                                    "content": "где купить мультиварку в Самаре",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 3,
+                                    "content": "мультиварки со скидкой в Москве",
+                                    "is_correct": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "65958",
+                            "position": 6,
+                            "content": "Как добавить словосочетание «своими руками» в качестве минус-слова на уровне кампании в Google AdWord?",
+                            "type": "radio",
+                            "answers": [
+                                {
+                                    "id": 1,
+                                    "content": "на вкладке «Ключевые слова» добавить в минус-слова [своими руками]",
+                                    "is_correct": true
+                                },
+                                {
+                                    "id": 2,
+                                    "content": "на вкладке «Ключевые слова» добавить в минус-слова «свой» и «рука»",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 3,
+                                    "content": "в настройках кампании вписать словосочетание «своими руками» в раздел «минус-слова на кампанию»",
+                                    "is_correct": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "65959",
+                            "position": 7,
+                            "content": "Группы объявлений помогают:",
+                            "type": "radio",
+                            "answers": [
+                                {
+                                    "id": 1,
+                                    "content": "сгруппировать в кампании объявления по тематикам",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 2,
+                                    "content": "выявить наиболее эффективные тексты объявлений",
+                                    "is_correct": true
+                                },
+                                {
+                                    "id": 3,
+                                    "content": "выявить новые ключевые слова для кампании",
+                                    "is_correct": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "65960",
+                            "position": 8,
+                            "content": "Как будет выглядеть заголовок объявления?",
+                            "type": "radio",
+                            "answers": [
+                                {
+                                    "id": 1,
+                                    "content": "скидки на карнавальные костюмы",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 2,
+                                    "content": "скидки на костюмы для детского сада",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 3,
+                                    "content": "скидки на костюмы",
+                                    "is_correct": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "65961",
+                            "position": 9,
+                            "content": "Как будут отбираться дополнительные ссылки для каждого объявления?",
+                            "type": "radio",
+                            "answers": [
+                                {
+                                    "id": 1,
+                                    "content": "нужно отметить приоритетные ссылки в каждой группе объявлений, тогда система покажет именно их",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 2,
+                                    "content": "система выберет для показа те ссылки, которые будут наиболее релевантны конкретному объявлению",
+                                    "is_correct": true
+                                },
+                                {
+                                    "id": 3,
+                                    "content": "все ссылки будут показываться поочередно",
+                                    "is_correct": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "65962",
+                            "position": 10,
+                            "content": "Какие размеры баннеров лучше использовать для показов на сайтах КМС Google AdWords?",
+                            "type": "radio",
+                            "answers": [
+                                {
+                                    "id": 1,
+                                    "content": "240x400, 250x250, 300x250, 970x250",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 2,
+                                    "content": "300x250, 300x600, 970x250, 970x90",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 3,
+                                    "content": "все допустимые размеры",
+                                    "is_correct": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "65963",
+                            "position": 11,
+                            "content": "Как лучше настроить ремаркетинг?",
+                            "type": "radio",
+                            "answers": [
+                                {
+                                    "id": 1,
+                                    "content": "показывать объявления ремаркетинга всем посетителям сайта",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 2,
+                                    "content": "создать список ремаркетинга для тех пользователей, которые смотрели страницу «Все услуги», но не переходили на страницу нужной услуги",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 3,
+                                    "content": "создать отдельный список ремаркетинга для тех, кто посещал страницу с нужной услугой, и предлагать им специальные условия по данной услуге, которые описаны на отдельной странице сайта",
+                                    "is_correct": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "65964",
+                            "position": 12,
+                            "content": "Откуда Google AdWords берет данные для разделения аудитории по полу, возрасту и родительскому статусу?",
+                            "type": "radio",
+                            "answers": [
+                                {
+                                    "id": 1,
+                                    "content": "выводы делаются на основе посещенных пользователем сайтов",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 2,
+                                    "content": "из профилей пользователей в социальных сетях",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 3,
+                                    "content": "из регистрационных данных в сервисах Google",
+                                    "is_correct": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "65965",
+                            "position": 13,
+                            "content": "Как лучше настроить демографические данные для показов объявлений в КМС?",
+                            "type": "radio",
+                            "answers": [
+                                {
+                                    "id": 1,
+                                    "content": "включить показы женщинам от 25 до 34 лет, все остальные половые и возрастные категории отключить ",
+                                    "is_correct": false
+                                },
+                                {
+                                    "id": 2,
+                                    "content": "на вкладке «Пол» оставить включенными категории «Женщины» и «Неизвестно», на вкладке «Возраст» — «25−34» и «Неизвестно»",
+                                    "is_correct": true
+                                },
+                                {
+                                    "id": 3,
+                                    "content": "включить показы женщинам от 18 до 45 лет, чтобы немного расширить аудиторию",
+                                    "is_correct": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
