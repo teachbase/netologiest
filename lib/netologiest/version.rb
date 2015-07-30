@@ -1,3 +1,4 @@
-module Netologiest # :nodoc:
-  VERSION = "0.0.0"
+# :nodoc:
+module Netologiest
+  VERSION = "0.0.1"
 end

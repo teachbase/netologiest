@@ -24,6 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "webmock"
   spec.add_development_dependency 'pry'
   spec.add_dependency "anyway_config", "~> 0", ">= 0.3"
-  spec.add_dependency 'activemodel'
+  spec.add_dependency "rest-client"
+  spec.add_dependency 'activesupport'
   spec.add_dependency 'json'
 end
