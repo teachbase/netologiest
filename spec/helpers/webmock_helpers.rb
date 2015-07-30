@@ -66,16 +66,14 @@ module NetologiestWebMock
     token = "S3PBVG38O1209Y01X5LEK0PYH0MT3YDZ"
     url = Netologiest.config.api_url + "/courses/#{id}?token=#{token}"
     stub_request(:get, url).to_return(
-      { 
-        headers: { 'Content-Type' => 'application/json' },
-        status: 401,
-        body: "Need token" 
-      },
       {
         headers: { 'Content-Type' => 'application/json' },
-        status: 200,
-        body: File.read("spec/fixtures/course.json")
-      }
+        status: 401,
+        body: "Need token"
+      },
+      headers: { 'Content-Type' => 'application/json' },
+      status: 200,
+      body: File.read("spec/fixtures/course.json")
     )
   end
 end
