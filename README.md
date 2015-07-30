@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/teachbase/netologiest.svg?branch=master)](https://travis-ci.org/teachbase/netologiest)
+
 # Netologiest
 Netology Ruby API client
 
@@ -5,18 +7,13 @@ API for Netology (http://netology.ru/) e-learning intergration.
 
 ## Configuration
 
-Netology contains two configuration attributes.
-The first is `api_key`.
-The second is `api_url`.
-For example:
+Netologiest uses [anyway_config](https://github.com/palkan/anyway_config) to configure client.
 
-```ruby
-  api_key: "your_api_key_here"
-  api_url: "http://dev.netology.ru/content_api"
+It has two configuration attributes:
+- `api_key`;
+- `api_url`.
 
-```
-
-Configuration parameters should be placed to `secrets.yml` file
+For example (in your `secrets.yml`):
 
 ```ruby
 ....
@@ -28,16 +25,14 @@ Configuration parameters should be placed to `secrets.yml` file
 
 ## Usage
 
-Netologiest having only one resource at moment. It is a course.
-And you can get list of courses
+Netologiest having only one resource at moment (Course).
+
+To get a list of courses
 
 ```ruby
   Netologiest::Course.list
-```
-
-It returns array of hashes. E.g.
-
-```ruby
+  
+  #=>
   [
     {
       "id" => "1",
@@ -62,11 +57,8 @@ Also you can get detailed information about any course:
 ```ruby
   # argument is Course ID 
   Netologiest::Course.detail(1)
-```
-
-It also returns a hash.
-
-```ruby
+  
+  #=>
   {
     "id" => 931,
     "name" => "Name of course",
