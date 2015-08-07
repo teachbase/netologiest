@@ -28,6 +28,8 @@ Configuration parameters should be placed to `secrets.yml` file
 
 ## Usage
 
+#### Course
+
 Netologiest having only one resource at moment. It is a course.
 And you can get list of courses
 
@@ -85,6 +87,25 @@ It also returns a hash.
     ]
   }
 ```
+
+#### Lesson's video
+
+Lesson class is used to obtain iframe token or iframe url (with token)
+
+```ruby
+  # returns complete URL to video iframe
+  Netologiest::Lesson.video_url(course_id, lesson_id)
+
+  # OR
+
+  lesson = Netologiest::Lesson.new(course_id, lesson_id)
+  # makes request to API and refresh lesson_token
+  lesson.video_token
+  # returns token
+  lesson.lesson_token
+  # returns complete URL
+  lesson.video_url
+```  
 
 ## Contributing
 

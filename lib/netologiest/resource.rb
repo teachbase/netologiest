@@ -69,21 +69,16 @@ module Netologiest
 
     def handle_detail(_response); end
 
-    protected
-
-    def build_url(*args)
-      File.join(Netologiest.config.api_url, *args.map(&:to_s))
-    end
-
     # rubocop:disable Metrics/MethodLength
     def get(url, options = {})
-      params = { token: token }.merge!(options)
+      params = { token: (options[:token] || token) }.merge!(options)
+
+      auth_method = options[:auth_method] || :authorize!
 
       RestClient.get(url, params: params) do |response, _request, _result|
         if response.code == 401
           begin
-            authorize!
-            params[:token] = token
+            params[:token] = send(auth_method)
             return RestClient.get(url, params: params)
           rescue RestClient::Unauthorized
             raise Netologiest::Unauthorized, response.body
@@ -93,5 +88,12 @@ module Netologiest
       end
     end
     # rubocop:enable Metrics/MethodLength
+
+    protected
+
+    def build_url(*args)
+      File.join(Netologiest.config.api_url, *args.map(&:to_s))
+    end
+
   end
 end
