@@ -25,7 +25,10 @@ For example (in your `secrets.yml`):
 
 ## Usage
 
-Netologiest having only one resource at moment (Course).
+#### Course
+
+Netologiest having only one resource at moment. It is a course.
+And you can get list of courses
 
 To get a list of courses
 
@@ -77,6 +80,25 @@ Also you can get detailed information about any course:
     ]
   }
 ```
+
+#### Lesson's video
+
+Lesson class is used to obtain iframe token or iframe url (with token)
+
+```ruby
+  # returns complete URL to video iframe
+  Netologiest::Lesson.video_url(course_id, lesson_id)
+
+  # OR
+
+  lesson = Netologiest::Lesson.new(course_id, lesson_id)
+  # makes request to API and refresh lesson_token
+  lesson.video_token
+  # returns token
+  lesson.lesson_token
+  # returns complete URL
+  lesson.video_url
+```  
 
 ## Contributing
 
