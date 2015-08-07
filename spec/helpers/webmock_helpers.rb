@@ -76,4 +76,19 @@ module NetologiestWebMock
       body: File.read("spec/fixtures/course.json")
     )
   end
+
+  ## Lessons methods
+
+  def lesson_token_stub(course_id, lesson_id)
+    token = "S3PBVG38O1209Y01X5LEK0PYH0MT3YDZ"
+    url = Netologiest.config.api_url
+    url += "/courses/#{course_id}/lessons/#{lesson_id}"
+    url += "/gettoken?token=#{token}"
+    stub_request(:get, url)
+      .to_return(
+        headers: { 'Content-Type' => 'application/json' },
+        status: 200,
+        body: File.read("spec/fixtures/lesson_token.json")
+      )
+  end
 end
