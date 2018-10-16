@@ -1,9 +1,2 @@
-class Object
-  def blank?
-    respond_to?(:empty?) ? !!empty? : !self
-  end
-
-  def present?
-    !blank?
-  end
-end
+# patch which includes presence methods form active_support
+Object.include PresenceMethods

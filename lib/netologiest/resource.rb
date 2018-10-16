@@ -39,7 +39,7 @@ module Netologiest
       )
     end
 
-    # rubocop:disable Metrics/AbcSize, Metrics//MethodLength
+    # rubocop:disable /AbcSize, Metrics//MethodLength
     def authorize!
       url = build_url('gettoken')
       params = { client_secret: Netologiest.config.api_key }
@@ -50,7 +50,7 @@ module Netologiest
           @token_expire = Time.now.to_i + body.fetch('expires_in').to_i
           @token = body['access_token']
         when 401
-          fail Netologiest::Unauthorized, response.body
+          raise Netologiest::Unauthorized, response.body
         else
           response
         end
@@ -60,6 +60,7 @@ module Netologiest
 
     def token_expired?
       return true unless token_expire.present?
+
       token_expire < Time.now.to_i
     end
 
@@ -95,6 +96,5 @@ module Netologiest
     def build_url(*args)
       File.join(Netologiest.config.api_url, *args.map(&:to_s))
     end
-
   end
 end
