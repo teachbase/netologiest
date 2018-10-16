@@ -1,6 +1,4 @@
 require 'json'
-require 'rest-client'
-require 'active_support'
 
 module Netologiest
   # This class describe client for
@@ -45,7 +43,7 @@ module Netologiest
     def authorize!
       url = build_url('gettoken')
       params = { client_secret: Netologiest.config.api_key }
-      RestClient.get(url, params: params) do |response, _request, _result|
+      HttpClient.get(url, params: params) do |response, _request, _result|
         case response.code
         when 200
           body = JSON.parse(response.body)
@@ -75,16 +73,19 @@ module Netologiest
 
       auth_method = options[:auth_method] || :authorize!
 
-      RestClient.get(url, params: params) do |response, _request, _result|
+      HttpClient.get(url, params: params) do |response, _request, _result|
         if response.code == 401
           begin
             params[:token] = send(auth_method)
-            return RestClient.get(url, params: params)
-          rescue RestClient::Unauthorized
-            raise Netologiest::Unauthorized, response.body
+            new_response = HttpClient.get(url, params: params)
+            if new_response.success?
+              return new_response.body
+            else
+              raise Netologiest::Unauthorized, response.body
+            end
           end
         end
-        response
+        response.body
       end
     end
     # rubocop:enable Metrics/MethodLength
