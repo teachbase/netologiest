@@ -43,7 +43,7 @@ module Netologiest
 
     def handle_lesson_token(response)
       data = JSON.parse(response)
-      return unless data.present? || data.any?
+      return if data.kind_of?(Hash) && data.empty?
 
       @lesson_token_expire = data["expires_in"]
       @lesson_token = data["access_token"]

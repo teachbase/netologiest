@@ -59,7 +59,7 @@ module Netologiest
     # rubocop:enable Metrics/AbcSize, Metrics//MethodLength
 
     def token_expired?
-      return true unless token_expire.present?
+      return true if token_expire.to_s.empty?
 
       token_expire < Time.now.to_i
     end

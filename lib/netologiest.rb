@@ -1,5 +1,3 @@
-require 'netologiest/presence_methods'
-require 'netologiest/object'
 require 'netologiest/resource'
 require 'netologiest/resources/course'
 require 'netologiest/resources/lesson'
