@@ -4,6 +4,7 @@ require 'netologiest/resources/lesson'
 require 'netologiest/config'
 require 'netologiest/exceptions'
 require 'netologiest/version'
+require 'netologiest/http_client'
 
 # Ruby client for Netology API
 module Netologiest

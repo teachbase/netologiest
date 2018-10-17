@@ -8,7 +8,7 @@ begin
 rescue LoadError
 end
 
-ENV["NETOLOGIEST_CONF"] = File.expand_path("../fixtures/netologiest_test.yml", __FILE__)
+ENV["NETOLOGIEST_CONF"] = File.expand_path('fixtures/netologiest_test.yml', __dir__)
 
 RSpec.configure do |config|
   config.mock_with :rspec

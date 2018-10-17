@@ -21,7 +21,8 @@ module Netologiest
 
     def parse_json(response)
       data = JSON.parse(response)
-      return unless data.present? || data.any?
+      return if data.kind_of?(Array) && data.empty?
+
       data
     end
   end

@@ -1,6 +1,4 @@
 require 'json'
-require 'rest-client'
-require 'active_support'
 
 module Netologiest
   # This class describe client for
@@ -41,18 +39,18 @@ module Netologiest
       )
     end
 
-    # rubocop:disable Metrics/AbcSize, Metrics//MethodLength
+    # rubocop:disable /AbcSize, Metrics//MethodLength
     def authorize!
       url = build_url('gettoken')
       params = { client_secret: Netologiest.config.api_key }
-      RestClient.get(url, params: params) do |response, _request, _result|
+      HttpClient.get(url, params: params) do |response, _request, _result|
         case response.code
         when 200
           body = JSON.parse(response.body)
           @token_expire = Time.now.to_i + body.fetch('expires_in').to_i
           @token = body['access_token']
         when 401
-          fail Netologiest::Unauthorized, response.body
+          raise Netologiest::Unauthorized, response.body
         else
           response
         end
@@ -61,7 +59,8 @@ module Netologiest
     # rubocop:enable Metrics/AbcSize, Metrics//MethodLength
 
     def token_expired?
-      return true unless token_expire.present?
+      return true if token_expire.to_s.empty?
+
       token_expire < Time.now.to_i
     end
 
@@ -75,16 +74,19 @@ module Netologiest
 
       auth_method = options[:auth_method] || :authorize!
 
-      RestClient.get(url, params: params) do |response, _request, _result|
+      HttpClient.get(url, params: params) do |response, _request, _result|
         if response.code == 401
           begin
             params[:token] = send(auth_method)
-            return RestClient.get(url, params: params)
-          rescue RestClient::Unauthorized
-            raise Netologiest::Unauthorized, response.body
+            new_response = HttpClient.get(url, params: params)
+            if new_response.success?
+              return new_response.body
+            else
+              raise Netologiest::Unauthorized, response.body
+            end
           end
         end
-        response
+        response.body
       end
     end
     # rubocop:enable Metrics/MethodLength
@@ -94,6 +96,5 @@ module Netologiest
     def build_url(*args)
       File.join(Netologiest.config.api_url, *args.map(&:to_s))
     end
-
   end
 end
